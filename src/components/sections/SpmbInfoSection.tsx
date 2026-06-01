@@ -19,11 +19,11 @@ export const SpmbInfoSection = () => {
           </div>
           <div>
             <span className="text-emerald-100 text-xs uppercase tracking-wide font-bold">Biaya Pendidikan</span>
-            <h3 className="text-2xl font-extrabold text-white">Biaya Pendaftaran & KBM 100% GRATIS!</h3>
+            <h3 className="text-2xl font-extrabold text-white">Biaya Pendaftaran 100% GRATIS!</h3>
           </div>
         </div>
         <p className="text-emerald-50 text-sm font-light leading-relaxed max-w-4xl">
-          Sesuai dengan komitmen pemerintah Kabupaten Sikka dan Kementerian Pendidikan, seluruh rangkaian seleksi pendaftaran, pemrosesan berkas, uang gedung, hingga kegiatan belajar mengajar harian di SMP Negeri 2 Waigete disubsidi penuh oleh dana **Bantuan Operasional Sekolah (BOS)**. Kami melarang keras segala bentuk pungutan liar maupun gratifikasi di lingkungan panitia penerimaan siswa baru.
+          Sesuai dengan komitmen pemerintah Kabupaten Sikka dan Kementerian Pendidikan, seluruh rangkaian seleksi pendaftaran, pemrosesan berkas, di SMP Negeri 2 Waigete disubsidi penuh oleh dana <strong className="font-bold">Bantuan Operasional Sekolah (BOS)</strong>. Kami melarang keras segala bentuk pungutan liar maupun gratifikasi di lingkungan panitia penerimaan siswa baru.
         </p>
       </div>
 
