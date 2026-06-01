@@ -44,12 +44,11 @@ export const HomeSection = ({ onNavigate }: HomeSectionProps) => {
       </div>
 
       {/* 2. Key Stats / Highlights */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
         {[
           { icon: Users, count: '280+', label: 'Siswa Aktif', color: 'text-blue-600 bg-blue-50' },
           { icon: GraduationCap, count: '26+', label: 'Guru & Staf', color: 'text-emerald-600 bg-emerald-50' },
           { icon: Building, count: '5+', label: 'Fasilitas Unggulan', color: 'text-purple-600 bg-purple-50' },
-          { icon: Award, count: '15+', label: 'Prestasi Utama', color: 'text-yellow-600 bg-amber-50' },
         ].map((stat, i) => (
           <div key={i} className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-center space-x-4">
             <div className={`p-4 rounded-xl ${stat.color}`}>
@@ -65,19 +64,14 @@ export const HomeSection = ({ onNavigate }: HomeSectionProps) => {
 
       {/* 3. Welcome Message */}
       <div className="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-100 grid md:grid-cols-12 gap-8 items-center">
-        <div className="md:col-span-4 flex flex-col items-center text-center">
-          <div className="relative rounded-2xl overflow-hidden border-4 border-white shadow-xl max-w-xs aspect-square">
-            <img
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400"
-              alt="Pankrasius Rasmani, S.Pd."
-              className="w-full h-full object-cover"
-              referrerPolicy="no-referrer"
-            />
+        <div className="md:col-span-4 flex flex-col items-center text-center border-b md:border-b-0 md:border-r border-slate-100 pb-6 md:pb-0 md:pr-8">
+          <div className="w-24 h-24 bg-gradient-to-tr from-blue-100 to-indigo-100 text-blue-700 rounded-2xl flex items-center justify-center font-bold text-2xl shadow-inner border border-blue-200/50 mb-4 font-mono">
+            PR
           </div>
-          <h4 className="mt-4 font-bold text-slate-900 text-lg">Pankrasius Rasmani, S.Pd.</h4>
+          <h4 className="font-bold text-slate-900 text-lg">Pankrasius Rasmani, S.Pd.</h4>
           <p className="text-xs text-blue-600 font-semibold tracking-wide">Kepala Sekolah SMPN 2 Waigete</p>
         </div>
-        <div className="md:col-span-8 space-y-6">
+        <div className="md:col-span-8 space-y-6 md:pl-4">
           <span className="text-xs uppercase tracking-widest text-blue-600 font-bold">Sambutan Kepala Sekolah</span>
           <h2 className="text-3xl font-extrabold text-slate-800 tracking-tight">
             Selamat Datang Calon Siswa Baru SMP Negeri 2 Waigete!
@@ -137,9 +131,9 @@ export const HomeSection = ({ onNavigate }: HomeSectionProps) => {
           <div className="flex items-center gap-2 text-yellow-400 font-semibold text-xs tracking-wider uppercase">
             <Calendar size={16} /> Informasi Terkini SPMB
           </div>
-          <h3 className="text-2xl font-extrabold">Pendaftaran Gelombang I Telah Dibuka Secara Online!</h3>
+          <h3 className="text-2xl font-extrabold">Pendaftaran murid baru SMPN 2 Waigete Telah Dibuka!</h3>
           <p className="text-blue-100 text-sm font-light leading-relaxed">
-            Periode pendaftaran dibuka dari tanggal <strong>1 Juni 2026 s.d. 30 Juni 2026</strong>. Pastikan Anda mengunggah dokumen prasyarat yang valid (KK, Akta Lahir, SKL) atau membawa dokumen asli langsung ke loket panitia sekolah.
+            Periode pendaftaran dibuka dari tanggal <strong>22 Juni 2026 s.d. 09 Juli 2026</strong>. Pastikan Anda mengunggah dokumen prasyarat yang valid (KK, Akta Lahir, SKL) atau membawa dokumen asli langsung ke loket panitia sekolah.
           </p>
         </div>
         <div className="flex items-center gap-4 shrink-0">
@@ -210,7 +204,7 @@ export const HomeSection = ({ onNavigate }: HomeSectionProps) => {
         </div>
         <div className="flex flex-wrap gap-4 w-full md:w-auto">
           <a
-            href="https://wa.me/6281234567890"
+            href="https://wa.me/6281237143514"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full md:w-auto text-center bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-6 py-3 rounded-xl shadow-lg shadow-emerald-500/10 transition flex items-center justify-center gap-2"

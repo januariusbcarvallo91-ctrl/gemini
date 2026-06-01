@@ -9,6 +9,7 @@ import { DynamicIcon } from './components/Icons';
 import { HomeSection } from './components/sections/HomeSection';
 import { ProfileSection } from './components/sections/ProfileSection';
 import { SpmbInfoSection } from './components/sections/SpmbInfoSection';
+import { AnnualFeesSection } from './components/sections/AnnualFeesSection';
 import { ScheduleSection } from './components/sections/ScheduleSection';
 import { RequirementsSection } from './components/sections/RequirementsSection';
 import { ProcedureSection } from './components/sections/ProcedureSection';
@@ -78,7 +79,7 @@ export default function App() {
     },
     {
       title: 'Informasi SPMB PPDB',
-      items: ['spmb-info', 'schedule', 'requirements', 'procedure', 'committee'],
+      items: ['spmb-info', 'annual-fees', 'schedule', 'requirements', 'procedure', 'committee'],
     },
     {
       title: 'Aksi Layanan Mandiri',
@@ -96,7 +97,7 @@ export default function App() {
             <span className="bg-yellow-400 text-blue-950 text-[9px] font-bold px-1.5 py-0.5 rounded uppercase tracking-wider animate-pulse">
               NEWS
             </span>
-            <span>SPMB SPENDU WAIGETE: 20 Juni s.d 09 Juli 2026. Segera daftarkan anak Anda!</span>
+            <span>SPMB SPENDU WAIGETE: 22 Juni s.d 09 Juli 2026. Segera daftarkan anak Anda!</span>
           </div>
           <div className="flex items-center gap-4 text-[10px] text-blue-250 font-mono divide-x divide-blue-805">
             <span className="flex items-center gap-1">
@@ -238,6 +239,7 @@ export default function App() {
           {activeTab === 'home' && <HomeSection onNavigate={handleNavigate} />}
           {activeTab === 'profile' && <ProfileSection />}
           {activeTab === 'spmb-info' && <SpmbInfoSection />}
+          {activeTab === 'annual-fees' && <AnnualFeesSection />}
           {activeTab === 'schedule' && <ScheduleSection />}
           {activeTab === 'requirements' && <RequirementsSection />}
           {activeTab === 'procedure' && <ProcedureSection />}

@@ -1,5 +1,5 @@
 import { useState, useMemo, FormEvent } from 'react';
-import { Search, AlertCircle, CheckCircle, Info, RefreshCw, XCircle, ArrowRight, UserCheck } from 'lucide-react';
+import { Search, AlertCircle, CheckCircle, Info, RefreshCw, XCircle, ArrowRight, UserCheck, Phone } from 'lucide-react';
 import { RegistrationData } from '../../types';
 
 interface RegistrationStatusProps {
@@ -77,6 +77,41 @@ export const RegistrationStatusSection = ({ registrations }: RegistrationStatusP
         <p className="text-slate-500 font-light text-sm mt-1">
           Gunakan NISN (10 Digit) atau kode pendaftaran resmi anak (misal: REG-2026-001) untuk melihat status verifikasi.
         </p>
+      </div>
+
+      {/* Info Card: Kontak WA Panitia */}
+      <div className="bg-gradient-to-br from-emerald-50/70 to-teal-50/70 border border-emerald-100/80 rounded-3xl p-6 sm:p-8 max-w-2xl mx-auto space-y-4">
+        <div className="flex gap-4 items-start">
+          <div className="p-3 bg-emerald-500 text-white rounded-2xl shrink-0 shadow-md">
+            <Phone size={22} />
+          </div>
+          <div className="space-y-1">
+            <h3 className="text-base font-extrabold text-slate-800">Hubungi WhatsApp Panitia Untuk Informasi Kelulusan</h3>
+            <p className="text-slate-600 text-xs sm:text-sm font-light leading-relaxed">
+              Silakan menghubungi nomor WA panitia di bawah ini untuk mendapatkan informasi rincian kelulusan siswa secara akurat dan responsif:
+            </p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-2">
+          {[
+            { name: 'Pak Yano', phone: '081237806460', raw: '6281237806460' },
+            { name: 'Ibu Umy', phone: '081237143514', raw: '6281237143514' },
+            { name: 'Pak Ignas', phone: '081389802651', raw: '6281389802651' },
+          ].map((contact, ci) => (
+            <a
+              key={ci}
+              href={`https://wa.me/${contact.raw}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white hover:bg-emerald-600 border border-slate-100 hover:border-emerald-600 hover:text-white rounded-2xl p-4 text-center transition-all duration-300 flex flex-col items-center gap-1 group shadow-sm hover:shadow-md cursor-pointer"
+            >
+              <span className="text-[9px] text-emerald-600 group-hover:text-emerald-150 font-black uppercase tracking-wider font-mono">HUBUNGI WA</span>
+              <span className="text-xs font-bold text-slate-850 group-hover:text-white">{contact.name}</span>
+              <span className="text-xs font-mono text-slate-500 group-hover:text-emerald-100 font-semibold">{contact.phone}</span>
+            </a>
+          ))}
+        </div>
       </div>
 
       {/* Search Input Box */}

@@ -2,6 +2,7 @@ export type ActiveTab =
   | 'home'
   | 'profile'
   | 'spmb-info'
+  | 'annual-fees'
   | 'schedule'
   | 'requirements'
   | 'procedure'
