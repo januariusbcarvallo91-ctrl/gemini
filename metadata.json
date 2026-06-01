@@ -1,0 +1,6 @@
+{
+  "name": "SPMB SMP Negeri 2 Waigete",
+  "description": "Sistem Informasi Penerimaan Murid Baru (SPMB) dan Profil Sekolah SMP Negeri 2 Waigete Tahun Ajaran 2026/2027",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
