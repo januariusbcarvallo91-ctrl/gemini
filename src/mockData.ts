@@ -11,7 +11,7 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: 'teachers', label: 'Guru & Staf', category: 'school', iconName: 'Users' },
   { id: 'facilities', label: 'Fasilitas Sekolah', category: 'school', iconName: 'Building2' },
   { id: 'achievements', label: 'Prestasi', category: 'school', iconName: 'Trophy' },
-  { id: 'gallery', label: 'Galeri Kegiatan', category: 'school', iconName: 'Image' },
+  { id: 'gallery', label: 'Agenda Kegiatan', category: 'school', iconName: 'Calendar' },
   { id: 'downloads', label: 'Unduhan Dokumen', category: 'spmb', iconName: 'FileDown' },
   { id: 'committee', label: 'Panitia SPMB', category: 'spmb', iconName: 'UserCheck' },
   { id: 'contact', label: 'Hubungi Kami', category: 'main', iconName: 'Phone' },
