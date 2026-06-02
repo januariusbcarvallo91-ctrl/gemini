@@ -38,27 +38,19 @@ export const FacilitiesSection = () => {
         {FACILITIES.map((facility) => (
           <div key={facility.id} className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col justify-between hover:shadow-md transition group">
             <div>
-              {/* Facility Image */}
-              <div className="relative h-48 overflow-hidden bg-slate-100">
-                <img
-                  src={facility.imageUrl}
-                  alt={facility.name}
-                  className="w-full h-full object-cover transform duration-500 group-hover:scale-105"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute top-4 left-4 p-3 bg-white/90 backdrop-blur-sm text-blue-600 rounded-xl shadow-md border border-white/20">
+              {/* Info */}
+              <div className="p-6 space-y-4">
+                <div className="p-3 bg-blue-50 text-blue-600 rounded-xl w-fit group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
                   {getIcon(facility.iconName)}
                 </div>
-              </div>
-
-              {/* Info */}
-              <div className="p-6 space-y-3">
-                <h3 className="font-bold text-slate-800 text-lg leading-tight transition-colors group-hover:text-blue-600">
-                  {facility.name}
-                </h3>
-                <p className="text-slate-650 text-xs sm:text-sm font-light leading-relaxed">
-                  {facility.description}
-                </p>
+                <div className="space-y-2">
+                  <h3 className="font-bold text-slate-800 text-lg leading-tight transition-colors group-hover:text-blue-600">
+                    {facility.name}
+                  </h3>
+                  <p className="text-slate-600 text-xs sm:text-sm font-light leading-relaxed">
+                    {facility.description}
+                  </p>
+                </div>
               </div>
             </div>
 
