@@ -99,16 +99,21 @@ export const HomeSection = ({ onNavigate }: HomeSectionProps) => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
             {
               title: 'Akademik Berbasis Karakter',
-              desc: 'Penerapan Kurikulum Merdeka yang menekankan pada nilai toleransi, budi pekerti luhur, kemandirian siswa, serta pengerjaan proyek inovatif (P5).',
+              desc: 'Penerapan Kurikulum Merdeka yang menekankan pada 6 dimensi profil lulusan: Keimanan dan Ketakwaan, Kewargaan, Penalaran Kritis, Kreativitas, Kolaborasi, Kemandirian, Kesehatan, Komunikasi dalam kegiatan intra kurikuler, kokurikuler dan extrakurikuler',
               color: 'border-t-4 border-blue-500',
             },
             {
-              title: 'Ekstrakurikuler Komprehensif',
-              desc: 'Dari Pramuka wajib hingga paduan suara berciri lokal, olahraga atletik, seni tari adat Sikka, dan klub sains komputer guna menyalurkan semua potensi murid.',
+              title: 'Bimbingan & Kepemimpinan',
+              desc: 'Layanan Bimbingan Konseling, wadah OSIS, dan Kepemimpinan Siswa untuk menunjang kedisiplinan serta kemandirian kepemimpinan siswa.',
+              color: 'border-t-4 border-amber-500',
+            },
+            {
+              title: 'Ekstrakurikuler Pilihan',
+              desc: 'Mengembangkan bakat siswa lewat Pramuka, Seni Musik Tradisional-Modern, Volly, English Club, Futsal, Seni Suara, Seni Tari, Bimbingan Rohani-ret ret, serta Kelas Berbasis Proyek (PjBL).',
               color: 'border-t-4 border-emerald-500',
             },
             {
@@ -117,9 +122,11 @@ export const HomeSection = ({ onNavigate }: HomeSectionProps) => {
               color: 'border-t-4 border-purple-500',
             },
           ].map((item, idx) => (
-            <div key={idx} className={`bg-white p-8 rounded-2xl shadow-sm border border-slate-100 ${item.color} space-y-4 hover:shadow-md transition-shadow`}>
-              <h3 className="text-xl font-bold text-slate-800">{item.title}</h3>
-              <p className="text-slate-600 text-sm leading-relaxed font-light">{item.desc}</p>
+            <div key={idx} className={`bg-white p-6 rounded-2xl shadow-sm border border-slate-100 ${item.color} space-y-4 hover:shadow-md transition-shadow flex flex-col justify-between`}>
+              <div className="space-y-3">
+                <h3 className="text-lg font-bold text-slate-800 leading-snug">{item.title}</h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-light">{item.desc}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -133,7 +140,7 @@ export const HomeSection = ({ onNavigate }: HomeSectionProps) => {
           </div>
           <h3 className="text-2xl font-extrabold">Pendaftaran murid baru SMPN 2 Waigete Telah Dibuka!</h3>
           <p className="text-blue-100 text-sm font-light leading-relaxed">
-            Periode pendaftaran dibuka dari tanggal <strong>22 Juni 2026 s.d. 09 Juli 2026</strong>. Pastikan Anda mengunggah dokumen prasyarat yang valid (KK, Akta Lahir, SKL) atau membawa dokumen asli langsung ke loket panitia sekolah.
+            Periode pendaftaran dibuka dari tanggal <strong>22 Juni 2026 s.d. 09 Juli 2026</strong>. Pastikan Anda melengkapi dokumen prasyarat yang valid dan membawa dokumen asli langsung ke loket panitia sekolah. Silahkan lihat syarat pendaftaran disamping.
           </p>
         </div>
         <div className="flex items-center gap-4 shrink-0">
@@ -175,7 +182,7 @@ export const HomeSection = ({ onNavigate }: HomeSectionProps) => {
           <div className="space-y-2">
             <h4 className="text-lg font-bold text-slate-800">Ingin Memantau Status Pendaftaran Anda?</h4>
             <p className="text-slate-500 text-sm font-light">
-              Masukkan NISN calon siswa atau ID pendaftaran untuk melihat status kelengkapan berkas fisik, jadwal wawancara, dan kelulusan.
+              Lihat jadwal dan hubungi panitia untuk mengetahui kelulusan.
             </p>
           </div>
           <div>
